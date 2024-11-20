@@ -13,46 +13,50 @@ SELECT column 1, column 2, column 3... FROM table_name1, table_name2
 WHERE table_name1.column name = table_name2.columnname; 
  
 # Types of Joins: 
-●Inner Join 
-●Left (Outer) Join 
-●Right (Outer) Join 
-●Full (Outer) Join 
- 
-INNER JOIN 
+#
+● Inner Join 
+● Left (Outer) Join 
+● Right (Outer) Join 
+● Full (Outer) Join 
+# 
+# INNER JOIN 
 The INNER JOIN keyword selects records that have matching values in both tables. 
  
 Syntax: 
 SELECTcolumn_name(s) FROM table1 INNER JOIN table2 
 ON table1.column_name = table2.column_name; 
  
-LEFT JOIN 
+# LEFT JOIN 
 The LEFT JOIN keyword returns all records from the left table (table1), and the matching 
 records from the right table (table2). The result is 0 records from the right side, if there is no 
 match. 
  
 Syntax: 
+
 SELECT column_name(s) 
 FROM table1 
 LEFT JOIN table2 
 ON table1.column_name = table2.column_name; 
   
-RIGHT JOIN 
+# RIGHT JOIN 
 The RIGHT JOIN keyword returns all records from the right table (table2), and the matching 
 records from the left table (table1). The result is 0 records from the left side, if there is no match. 
  
 Syntax: 
+
 SELECT column_name(s) 
 FROM table1 
 RIGHT JOIN table2 
 ON table1.column_name = table2.column_name; 
  
-FULL OUTER JOIN 
+# FULL OUTER JOIN 
 The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or 
 right (table2) table records. 
  
 FULL OUTER JOIN and FULL JOIN are the same. 
  
-Syntax: 
+Syntax:
+
 SELECT column_name(s) 
 FROM table1 
 FULL OUTER JOIN table2 
